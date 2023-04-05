@@ -249,18 +249,17 @@
 @media screen and (max-width: 769px) {
 
   .main-container {
-    width: 100%;
+    animation: moveBg 20s linear infinite;
   }
 
   .page-container {
-    width: 100%;
     display: block;
     text-align: center;
   }
 
   .info-container {
     width: 100%;
-    margin: 80px auto;
+    margin: 50px auto 0 auto;
     margin-left: 0;
     padding: 0;
   }
@@ -269,59 +268,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 35px;
+  }
+  div.logos {
     width: 100%;
   }
 
   .rb-logo {
-    width: 320px;
+    padding-top: 0;
+    width: 25vmax;
   }
 
-  .image-2 {
-    width: 145px;
+/* .aviator-logo */
+  div.aviator-logo {
+    height: 12vmax;
+    width: 20vmax;
+    margin-top: 25px;
+    padding: 0;
   }
 
   .mobile-plane {
     display: block;
-    width: 100dvw;
-  }
-
-  .container-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-
   }
 
   .container-title .heading {
-    font-size: 46px;
-    line-height: 60px;
-    padding: 0 70px;
+    font-size: 4vmax;
+    line-height: 4.5vmax;
+    padding: 0 60px;
   }
 
   .container-subtitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
 
   .heading-2 {
-    font-size: 30px;
-    line-height: 40px;
-    padding: 0 70px;
+    font-size: 3vmax;
+    line-height: 3.5vmax;
+    padding: 0 60px;
   }
 
   .text-block-2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2.5vmax;
+    line-height: 2vmax;
     padding: 0 70px;
   }
 
   .text-block-4 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 2vmax;
+    line-height: 2vmax;
+  }
+  div.container-text {
+    margin: o;
+    padding: 0;
   }
 
   .container-text {
@@ -329,7 +329,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
   }
 
   .container-btn {
@@ -337,7 +336,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .main-container .vint {
@@ -375,8 +374,7 @@
 
 @media screen and (max-width: 420px) {
   .info-container {
-    margin: 36px auto;
-    top: 5%;
+    margin-top: 36px;
   }
 
   .rb-logo {
