@@ -260,7 +260,6 @@
   }
 
   .info-container {
-
     width: 100%;
     margin: 80px auto;
     margin-left: 0;
@@ -378,6 +377,7 @@
 @media screen and (max-width: 420px) {
   .info-container {
     margin: 36px auto;
+    top: 5%;
   }
 
   .rb-logo {
