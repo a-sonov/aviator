@@ -28,7 +28,7 @@
   position: absolute;
   display: flex;
   width: 45%;
-  top: 30%;
+  /* top: 30%; */
   margin-bottom: 0;
   margin-left: 132px;
   flex-direction: column;
