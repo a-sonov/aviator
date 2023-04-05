@@ -311,7 +311,6 @@
     width: 25vmax;
   }
 
-  /* .aviator-logo */
   div.aviator-logo {
     height: 12vmax;
     width: 20vmax;
@@ -327,42 +326,28 @@
     font-size: 4vmax;
     line-height: 4.5vmax;
     padding: 0 60px;
+    margin-top: 0;
   }
 
   .container-subtitle {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
   }
 
   .heading-2 {
     font-size: 3vmax;
     line-height: 3.5vmax;
-    padding: 0 60px;
+    padding: 0 50px;
+    margin-top: 10px;
   }
 
   .text-block-2 {
     font-size: 2.5vmax;
     line-height: 2vmax;
-    padding: 0 70px;
+    padding: 0 50px;
     margin-bottom: 0;
-  }
-
-  .text-block-4 {
-    font-size: 2vmax;
-    line-height: 2vmax;
-  }
-
-  div.container-text {
-    margin: o;
-    padding: 0;
-  }
-
-  .container-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
 
   .container-btn {
@@ -372,6 +357,25 @@
     width: 100%;
     margin-top: 0px;
   }
+  .text-block-4 {
+    font-size: 2vmax;
+    line-height: 2vmax;
+    margin-top: 0px;
+  }
+
+  div.container-text {
+    padding: 0;
+    margin-top: 0px;
+  }
+
+  .container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+
 
   .main-container .vint {
     display: none;
