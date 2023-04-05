@@ -5,7 +5,7 @@
   background-image: url('../images/AE_BG-1.png') ;
   background-position: 0px 0px;
   background-size: cover;
-  animation: moveBg 12s linear infinite;
+  animation: moveBg 10s linear infinite;
 }
 @keyframes moveBg {
   0% {
@@ -14,13 +14,6 @@
   100% {
     background-position: 0 0;
   }
-}
-
-.image {
-  display: inline-block;
-  width: 600px;
-  max-width: 130%;
-  margin-left: -13px;
 }
 
 .page-container {
@@ -34,7 +27,7 @@
 .info-container {
   position: absolute;
   display: flex;
-  width: 100%;
+  width: 45%;
   height: 100%;
   top: 30%;
   margin-bottom: 0;
@@ -47,49 +40,52 @@
 
 .logos {
   display: flex;
+  height: 6vmax;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .rb-logo {
-  padding-top: 10px ;
+  padding-top: 10px 0;
+  width: 25vmax;
 }
 
 .aviator-logo {
-  display: inline-block;
+  width: 25vmax;
 }
 
 .image-2 {
   margin-left: 40px;
+  width: 9vmax;
+  padding-bottom: 10px;
 }
-
-/* .image-3 {
-  display: inline-block;
-  padding-top: 26px;
-} */
 
 .heading {
   color: #fff;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 3vmax;
+  line-height: 3.5vmax;
 }
 
 .heading-2 {
   color: #fff;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 2vmax;
+  line-height: 3vmax;
   text-transform: uppercase;
 }
 
 .text-block-2 {
   color: #fff;
+  font-size: 1.5vmax;
+  line-height: 3vmax;
 }
 
 .text-block-4 {
   margin-top: 10px;
-  padding: 10px 35px;
+  padding: 20px 70px;
   border-radius: 8px;
   background-color: #0c8aff;
   color: #fff;
-  font-size: 12px;
+  font-size: 1vmax;
   text-transform: uppercase;
 }
 
