@@ -36,8 +36,8 @@
   display: flex;
   width: 100%;
   height: 100%;
-  margin-top: 600px;
-  margin-bottom: auto;
+  top: 30%;
+  margin-bottom: 0;
   margin-left: 132px;
   flex-direction: column;
   align-items: flex-start;
@@ -112,10 +112,11 @@
 }
 
 .vint {
-  height: 700px;
+  height: 758px;
   width: 55%;
-  top: 350px;
+  /* top: 350px; */
   left: 120px;
+  bottom: 0;
   position: absolute;
   margin-right: 0px;
   margin-left: 0px;
