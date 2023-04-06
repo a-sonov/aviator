@@ -1,12 +1,19 @@
+body {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
 .main-container {
   display: flex;
+  display: -webkit-flex;
   width: 100%;
   height: 100vh;
   background-image: url('../images/AE_BG-1.png');
   background-position: 0px 0px;
   background-size: calc(100% + 48px) auto;
-  ;
   animation: moveBg 4s linear infinite;
+  -webkit-animation: moveBg 4s linear infinite;
+  overflow: hidden;
 }
 
 @keyframes moveBg {
@@ -28,28 +35,38 @@
 
 .page-container {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   width: 100%;
   flex-direction: row;
+  -webkit-flex-direction: row;
   align-items: center;
+  -webkit-align-items: center;
+  overflow: hidden;
 }
 
 .info-container {
   position: absolute;
   display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
   width: 45%;
   margin-bottom: 0;
   margin-left: 132px;
   flex-direction: column;
   align-items: flex-start;
+  -webkit-align-items: flex-start;
   background-color: transparent;
   z-index: 3;
 }
 
 .logos {
   display: flex;
+  display: -webkit-flex;
   height: 6vmax;
   align-items: center;
+  -webkit-align-items: center;
   margin-bottom: 30px;
 }
 
@@ -92,11 +109,14 @@
   margin-top: 10px;
   padding: 20px 70px;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
   background-color: #0c8aff;
   color: #fff;
   font-size: 1vmax;
   text-transform: uppercase;
   text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .mobile-plane {
@@ -104,36 +124,37 @@
 }
 
 .plane-container {
+  max-width: 100%;
   position: absolute;
+  overflow: hidden;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   animation: movePlane 4s linear infinite;
+  -webkit-animation: movePlane 4s linear infinite;
 }
 
 @keyframes movePlane {
   0% {
-    transform: translateX(28px);
+    -webkit-transform: translateX(28px);
     /* Start at -14px */
   }
 
   50% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
     /* Move to 14px at 50% progress */
   }
 
   100% {
-    transform: translateX(28px);
+    -webkit-transform: translateX(28px);
     /* Move back to -14px at 100% progress */
   }
 }
-
 
 .plane {
   display: block;
   height: 100vh;
   width: 100%;
-  overflow: visible;
-
+  z-index: 0;
 }
 
 .vint {
@@ -144,9 +165,14 @@
   position: absolute;
   margin-right: 0px;
   margin-left: 0px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
-
-
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .plane-container {
+    max-width: 100%;
+  }
+}
 
 /* @media screen and (min-width: 1920px) {
   .main-container {
@@ -279,8 +305,26 @@
 @media screen and (max-width: 769px) {
 
   .main-container {
-    animation: none;
+    animation: moveBg 25s linear infinite;
+    -webkit-animation: moveBg 25s linear infinite;
     background-size: cover;
+  }
+
+  @keyframes moveBg {
+    0% {
+      background-position: 100% 0;
+      /* Start at -14px */
+    }
+  
+    50% {
+      background-position: 50% 0;
+      /* Move to 14px at 50% progress */
+    }
+  
+    100% {
+      background-position: 0% 0;
+      /* Move back to -14px at 100% progress */
+    }
   }
 
   .page-container {
@@ -297,6 +341,7 @@
 
   .logos {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     padding: 0 35px;
@@ -304,18 +349,26 @@
 
   div.logos {
     width: 100%;
+    height: 100%;
   }
 
   .rb-logo {
     padding-top: 0;
-    width: 25vmax;
+    width: 27vmax;
   }
 
   div.aviator-logo {
+    display: flex;
+    display: -webkit-flex;
     height: 12vmax;
-    width: 20vmax;
-    margin-top: 25px;
+    width: 18vmax;
+    margin-top: 0px;
     padding: 0;
+    text-align: right;
+    justify-content: flex-end;
+  }
+  img.image-2 {
+    width: 65%;
   }
 
   .mobile-plane {
@@ -331,6 +384,7 @@
 
   .container-subtitle {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     margin-top: 0;
@@ -352,8 +406,11 @@
 
   .container-btn {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     width: 100%;
     margin-top: 0px;
   }
@@ -370,12 +427,13 @@
 
   .container-text {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     width: 100%;
   }
-
-
 
   .main-container .vint {
     display: none;
@@ -395,6 +453,7 @@
 
   .container-btn {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -416,11 +475,11 @@
   }
 
   .rb-logo {
-    width: 150px;
+    /* width: 150px; */
   }
 
   .image-2 {
-    width: 70px;
+    /* width: 70px; */
   }
 
   .container-title .heading {
@@ -442,5 +501,6 @@
   .text-block-4 {
     font-size: 14px;
     line-height: 17px;
+    text-shadow: none;
   }
 }
