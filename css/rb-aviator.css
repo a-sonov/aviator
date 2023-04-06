@@ -309,7 +309,7 @@ body {
 
 } */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 820px) {
 
   .main-container {
     animation: moveBg 25s linear infinite;
@@ -479,6 +479,11 @@ body {
 @media screen and (max-width: 420px) {
   .info-container {
     margin-top: 36px;
+  }
+
+  .plane-container {
+    animation: none;
+    -webkit-animation: none;
   }
 
   .rb-logo {
