@@ -20,17 +20,14 @@ body {
 @keyframes moveBg {
   0% {
     background-position: -14px 0;
-    /* Start at -14px */
   }
 
   50% {
     background-position: 0px 0;
-    /* Move to 14px at 50% progress */
   }
 
   100% {
     background-position: -14px 0;
-    /* Move back to -14px at 100% progress */
   }
 }
 
@@ -133,11 +130,11 @@ a:active {
 }
 
 .plane-container {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 50%;
+  width: 1077px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -149,46 +146,50 @@ a:active {
   -webkit-animation: movePlane 4s linear infinite;
 }
 
-@keyframes movePlane {
+@-webkit-keyframes movePlane {
   0% {
     -webkit-transform: translateX(28px);
-    /* Start at -14px */
   }
 
   50% {
     -webkit-transform: translateX(0px);
-    /* Move to 14px at 50% progress */
   }
 
   100% {
     -webkit-transform: translateX(28px);
-    /* Move back to -14px at 100% progress */
+  }
+}
+
+@keyframes movePlane {
+  0% {
+    transform: translateX(28px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(28px);
   }
 }
 
 .plane {
-  display: block;
   height: 100vh;
-  width: 100%;
-  z-index: 1;
+  right: o;
+  z-index: 2;
 }
 
 .vint {
-  height: 70%;
-  width: 70%;
-  left: 30px;
+  height: 71vh;
+  right: 31vh;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   margin-right: 0px;
   margin-left: 0px;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
-/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .plane-container {
-    max-width: 100%;
-  }
-} */
 
 @media screen and (max-width: 912px) and (-webkit-min-device-pixel-ratio: 0) {
 
@@ -201,17 +202,14 @@ a:active {
   @keyframes moveBg {
     0% {
       background-position: 100% 0;
-      /* Start at -14px */
     }
   
     50% {
       background-position: 50% 0;
-      /* Move to 14px at 50% progress */
     }
   
     100% {
       background-position: 0% 0;
-      /* Move back to -14px at 100% progress */
     }
   }
     .plane-container {
@@ -363,14 +361,6 @@ a:active {
   .plane-container {
     animation: none;
     -webkit-animation: none;
-  }
-
-  .rb-logo {
-    /* width: 150px; */
-  }
-
-  .image-2 {
-    /* width: 70px; */
   }
 
   .container-title .heading {
