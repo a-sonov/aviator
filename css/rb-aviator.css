@@ -206,6 +206,9 @@ summary {
   line-height: 24px;
   margin-bottom: 24px;
 }
+summary::-webkit-details-marker {
+  display: none;
+}
 
 .terms__header {
   border-bottom: 1px dashed;
