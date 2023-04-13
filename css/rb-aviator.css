@@ -1,7 +1,7 @@
 body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-  overflow: hidden;
+  overflow: auto;
 }
 .main-container {
   display: flex;
@@ -191,6 +191,58 @@ a:active {
     transform: translateZ(0);
 }
 
+.terms {
+  color: #ffffff;
+  margin-top: 34px;
+  text-align: left;
+  text-shadow: none;
+}
+
+summary {
+  display: flex;
+  margin-left: 3vmax;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.terms__header {
+  border-bottom: 1px dashed;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+summary img {
+  width: 1vmax;
+  height: 0.6vmax;
+  margin: auto 0 auto 6px;
+  transition: transform 0.3s ease;
+}
+
+summary:active img {
+  transform: rotate(180deg);
+}
+
+.terms__list {
+  padding: 26px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  background-color: black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(22px);
+  border-radius: 8px;
+}
+.terms__list ol {
+  margin: 0;
+  padding-left: 26px;
+}
+details[open] summary~* {
+  animation: open 1s ease-in-out;
+}
+
 @media screen and (max-width: 912px) and (-webkit-min-device-pixel-ratio: 0) {
 
   .main-container {
@@ -218,12 +270,12 @@ a:active {
     }
 
   .page-container {
-    display: block;
+    display: flex;
     text-align: center;
     animation: none;
     -webkit-animation: none;
-  }
 
+  }
   .info-container {
     width: 100%;
     margin: 50px auto 0 auto;
@@ -262,18 +314,15 @@ a:active {
   img.image-2 {
     width: 65%;
   }
-
   .mobile-plane {
     display: block;
   }
-
   .container-title .heading {
     font-size: 4vmax;
     line-height: 4.5vmax;
     padding: 0 60px;
     margin-top: 0;
   }
-
   .container-subtitle {
     display: flex;
     display: -webkit-flex;
@@ -281,21 +330,18 @@ a:active {
     align-items: center;
     margin-top: 0;
   }
-
   .heading-2 {
     font-size: 3vmax;
     line-height: 3.5vmax;
     padding: 0 50px;
     margin-top: 10px;
   }
-
   .text-block-2 {
     font-size: 2.5vmax;
     line-height: 2vmax;
     padding: 0 50px;
     margin-bottom: 0;
   }
-
   .container-btn {
     display: flex;
     display: -webkit-flex;
@@ -311,12 +357,10 @@ a:active {
     line-height: 2vmax;
     margin-top: 0px;
   }
-
   div.container-text {
     padding: 0;
     margin-top: 0px;
   }
-
   .container-text {
     display: flex;
     display: -webkit-flex;
@@ -325,16 +369,8 @@ a:active {
     align-items: center;
     -webkit-align-items: center;
     width: 100%;
-  }
-
-  .container-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     margin-top: 20px;
   }
-
   .container-btn {
     display: flex;
     display: -webkit-flex;
@@ -343,13 +379,44 @@ a:active {
     width: 100%;
     margin-top: 20px;
   }
-
   .vint {
     display: contents;
   }
-
   .plane {
     display: contents;
+  }
+
+  summary {
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+  }
+  .terms {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  details {
+    margin-left: 62px;
+    margin-right: 62px;
+  }
+  details[open] {
+    margin-left: 62px;
+    margin-right: 62px;
+  }
+  details[open] .terms__list{
+    text-align: left;
+  }
+
+  .summary-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -357,28 +424,23 @@ a:active {
   .info-container {
     margin-top: 36px;
   }
-
   .plane-container {
     animation: none;
     -webkit-animation: none;
   }
-
   .container-title .heading {
     font-size: 3vmax;
     line-height: 3.5vmax;
     padding: 0 20px;
   }
-
   .heading-2 {
     font-size: 16px;
     line-height: 19px;
   }
-
   .text-block-2 {
     font-size: 14px;
     line-height: 17px;
   }
-
   .text-block-4 {
     font-size: 14px;
     line-height: 17px;
@@ -386,4 +448,50 @@ a:active {
     padding-left: 50px;
     padding-right: 50px;
   }
+  .terms {
+    margin-top: 10px;
+  }
+  #summary {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .terms__list {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  details {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  details[open] {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
 }
+
+@media screen and (width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+ .logos {
+  margin-bottom: 0;
+ }
+ .terms {
+  margin-top: 10px;
+ }
+ .terms__list {
+  padding: 16px;
+
+ }
+}
+@media screen and (width: 540px) and (-webkit-min-device-pixel-ratio: 0) {
+  .logos {
+   margin-bottom: 0;
+  }
+  .terms {
+   margin-top: 10px;
+  }
+  .terms__list {
+   padding: 10px;
+ 
+  }
+ }
+

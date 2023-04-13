@@ -2,17 +2,6 @@
   position: relative;
   display: inline-block;
 }
-/* 
-.full-plane {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-/* .vint {
-  z-index: 1;
-} */
-
 
 @font-face {
   font-family: 'webflow-icons';
