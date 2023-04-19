@@ -104,7 +104,7 @@ body {
   margin-bottom: 30px;
 }
 
-.text-block-4 {
+.button {
   margin-top: 10px;
   padding: 20px 70px;
   border-radius: 8px;
@@ -355,7 +355,7 @@ details[open] summary~* {
     width: 100%;
     margin-top: 0px;
   }
-  .text-block-4 {
+  .button {
     font-size: 2vmax;
     line-height: 2vmax;
     margin-top: 0px;
@@ -444,7 +444,7 @@ details[open] summary~* {
     font-size: 14px;
     line-height: 17px;
   }
-  .text-block-4 {
+  .button {
     font-size: 14px;
     line-height: 17px;
     text-shadow: none;

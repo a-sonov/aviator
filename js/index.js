@@ -66,3 +66,10 @@ $(document).ready(function () {
       }
     });
   });
+
+  const button = document.querySelector('.button');
+
+  button.addEventListener('click', () => {
+    window.open('https://rocketbets.com/br/popup/registration', '_self');
+  });
+  
